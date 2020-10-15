@@ -1,5 +1,6 @@
 =begin
-A Roman Numeral Converter that aims to teach the user about what a Roman numeral is, converts between Roman numerals and Arabic numbers and allows the user to practice on randomly generated numbers and to take a short test on them. 
+A Roman Numeral Converter that aims to teach the user about what a Roman numeral is, converts between Roman numerals and Arabic numbers and allows the user to 
+practice on randomly generated numbers and to take a short test on them. 
 =end
 
 =begin 
@@ -22,7 +23,8 @@ $CONVERSIONS = {
 }
 
 =begin
-The decoder function takes a Roman numeral as an input which is cloned so that we have a copy of the original input. For each letter in the conversion chart, if the numeral starts with that letter then we add its corresponding value to the total. Then we remove the letter and check if the next letter is in the hash.
+The decoder function takes a Roman numeral as an input which is cloned so that we have a copy of the original input. For each letter in the conversion chart, 
+if the numeral starts with that letter then we add its corresponding value to the total. Then we remove the letter and check if the next letter is in the hash.
 
 If the length of the Roman numeral string is not 0, it must contain a character that is not in the hash. This means it is an invalid input, so we return nil.
 =end
@@ -43,7 +45,9 @@ def decoder(roman)
 end
 
 =begin
-The encoder function takes a number as an argument which is cloned so we have a copy of the original input. If the number is between 1 and 3999 inclusive, then for each number in the conversion chart, we divide the input by it to get a quotient and remainder. We add the corresponding Roman numeral to the result 'quotient' times and continue the algorithm with the remainder. 
+The encoder function takes a number as an argument which is cloned so we have a copy of the original input. If the number is between 1 and 3999 inclusive, 
+then for each number in the conversion chart, we divide the input by it to get a quotient and remainder. We add the corresponding Roman numeral to the result 
+'quotient' times and continue the algorithm with the remainder. 
 =end
 def encoder(number)
   if number > 3999 or number <= 0
@@ -63,7 +67,8 @@ def encoder(number)
 end
 
 =begin
-A small information section on what Roman numerals are. Each Roman numeral is displayed with its value so that it can be referred back to when doing a practice exercise.
+A small information section on what Roman numerals are. Each Roman numeral is displayed with its value so that it can be referred back to when doing a practice 
+exercise.
 =end
 def display_info
   puts "\n  According to Wikipedia, Roman numerals are a numeral system that originated in ancient Rome. They were the main way of writing numbers until the Late Middle Ages, when they were replaced by Arabic numerals.
@@ -80,9 +85,13 @@ def display_info
 end
 
 =begin
-The converter asks for a user input of either a number or a Roman numeral. If the input can be converted to an integer using Integer, we know that the user entered a number to convert into a Roman numeral so we use the encoder function and print out the converted numeral. If the encoder function returns nil, it must not be an integer between 1 and 3999 so we print this to tell the user.
+The converter asks for a user input of either a number or a Roman numeral. If the input can be converted to an integer using Integer, we know that the user 
+entered a number to convert into a Roman numeral so we use the encoder function and print out the converted numeral. If the encoder function returns nil, it 
+must not be an integer between 1 and 3999 so we print this to tell the user.
 
-If the input cannot be converted to an integer, it must be a string so the user entered a Roman numeral. Here, we use a rescue block which catches the argument error and continues the conversion from a Roman numeral to an Arabic numeral. If the input contains characters in the string which are not Roman numerals, the function returns nil so we know that the input is invalid and can be entered again.
+If the input cannot be converted to an integer, it must be a string so the user entered a Roman numeral. Here, we use a rescue block which catches the argument 
+error and continues the conversion from a Roman numeral to an Arabic numeral. If the input contains characters in the string which are not Roman numerals, the 
+function returns nil so we know that the input is invalid and can be entered again.
 
 The function repeats until the user responds either no, n or q.
 =end
@@ -123,7 +132,8 @@ def converter
 end
 
 =begin
-A random number between 1 and 3999 is generated. The user gets 3 attempts to convert it correctly to Roman numerals. If the user either gets it right or their three tries are up, they get the choice to practice again. The function repeats with a new random number until the user quits.
+A random number between 1 and 3999 is generated. The user gets 3 attempts to convert it correctly to Roman numerals. If the user either gets it right or their 
+three tries are up, they get the choice to practice again. The function repeats with a new random number until the user quits.
 =end
 def practice_questions
   repeating = true
