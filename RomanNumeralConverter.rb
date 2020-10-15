@@ -1,5 +1,5 @@
 =begin
-A Roman Numeral Converter that aims to teach the user about what a Roman numeral is, converts between Roman numerals and Arabic numbers and allows the user to practice on randomly generated numbers and to take a short test on them.
+A Roman Numeral Converter that aims to teach the user about what a Roman numeral is, converts between Roman numerals and Arabic numbers and allows the user to practice on randomly generated numbers and to take a short test on them. 
 =end
 
 =begin 
