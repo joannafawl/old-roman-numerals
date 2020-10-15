@@ -71,9 +71,11 @@ A small information section on what Roman numerals are. Each Roman numeral is di
 exercise.
 =end
 def display_info
-  puts "\n  According to Wikipedia, Roman numerals are a numeral system that originated in ancient Rome. They were the main way of writing numbers until the Late Middle Ages, when they were replaced by Arabic numerals.
+  puts "\n  According to Wikipedia, Roman numerals are a numeral system that originated in ancient Rome. They were the main way of writing numbers until the"\ 
+  "Late Middle Ages, when they were replaced by Arabic numerals.
     
-  Numbers are represented by combinations of letters from the Latin alphabet. For example, 11 is written as 'XI', meaning 'ten plus one', whereas 4 is written as 'IV', meaning 'one less than five'. The largest number that can be written this way is 3999.
+  Numbers are represented by combinations of letters from the Latin alphabet. For example, 11 is written as 'XI', meaning 'ten plus one', whereas 4 is written"\ 
+  "as 'IV', meaning 'one less than five'. The largest number that can be written this way is 3999.
     
   The current year, 2020, is written 'MMXX' in Roman numerals.
     
